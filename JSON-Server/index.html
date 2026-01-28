@@ -3,26 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>JSON Server Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Quản lý Posts</h2>
+<h1 class="title">JSON Server Demo</h1>
 
-<input id="title" placeholder="Tiêu đề post">
-<input id="views" type="number" placeholder="Views">
-<button onclick="addPost()">Thêm post</button>
+<div class="container">
+  <!-- Cột trái -->
+  <div class="box">
+    <h2>Quản lý Posts</h2>
 
-<ul id="postList"></ul>
+    <div class="form-row">
+      <input id="title" placeholder="Tiêu đề post">
+      <input id="views" type="number" placeholder="Views">
+      <button onclick="addPost()">Thêm post</button>
+    </div>
 
-<hr>
+    <ul id="postList"></ul>
+  </div>
 
-<h2>Quản lý Comments</h2>
+  <!-- Cột phải -->
+  <div class="box">
+    <h2>Quản lý Comments</h2>
 
-<input id="postId" placeholder="Post ID">
-<input id="commentText" placeholder="Nội dung comment">
-<button onclick="addComment()">Thêm comment</button>
+    <div class="form-row">
+      <input id="postId" type="number" placeholder="Post ID">
+      <input id="commentText" placeholder="Nội dung comment">
+      <button onclick="addComment()">Thêm comment</button>
+    </div>
 
-<ul id="commentList"></ul>
+    <ul id="commentList"></ul>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
