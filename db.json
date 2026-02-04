@@ -1,74 +1,30 @@
 {
-  "$schema": "./node_modules/json-server/schema.json",
   "posts": [
     {
       "id": "1",
       "title": "a title",
       "views": 100,
-      "isDeleted": true
+      "isDeleted": false
     },
     {
       "id": "2",
       "title": "another title",
       "views": 200,
       "isDeleted": true
-    },
-    {
-      "id": "3",
-      "title": "ád",
-      "views": 22,
-      "isDeleted": true
-    },
-    {
-      "id": "4",
-      "title": "ád",
-      "views": 22,
-      "isDeleted": true
-    },
-    {
-      "id": "5",
-      "title": "ád",
-      "views": 22,
-      "isDeleted": true
-    },
-    {
-      "id": "6",
-      "title": "ád",
-      "views": 22,
-      "isDeleted": true
-    },
-    {
-      "id": "7",
-      "title": "ád",
-      "views": 22,
-      "isDeleted": true
-    },
-    {
-      "id": "8",
-      "title": "ádda",
-      "views": 0,
-      "isDeleted": true
-    },
-    {
-      "id": "9",
-      "title": "ádda",
-      "views": 0,
-      "isDeleted": true
-    },
-    {
-      "id": "10",
-      "title": "ádda",
-      "views": 0,
-      "isDeleted": true
-    },
-    {
-      "id": "11",
-      "title": "ádda",
-      "views": 213123,
-      "isDeleted": true
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
